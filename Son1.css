@@ -1,0 +1,96 @@
+#a{width: 90%;
+	height: 50px;
+	background-color: rgba(255,0,0,0.1);
+	text-align: center;
+	  margin: auto;}
+	
+	.a1{width: 150px;
+	height: 50px;
+	background-color: transparent;
+	padding-top: 1px;
+	margin-left: 50px;
+	float: left;
+	font:楷书;
+	color: black;
+	text-align: center;}
+	
+	#a2{margin-left: 60px;
+	margin-top: 10px;
+	float: left;
+	color: #FF0000;
+	font-weight: 900;
+	font-family: "宋体";}
+	
+	.aa1{border: #000000 0px solid;
+	margin:10px auto;
+	padding-left:5px;
+	font-weight: 900;
+	font-size: larger;}
+	
+	button :hover{color:red;
+	background-color: powderblue;
+	}
+			
+	#f1{width: 550px;
+	height: 70px;
+	margin: auto;
+	border: #000000 0px solid;
+	font-size: 30px;
+	font-weight: 900;
+	}
+		
+	.f2{width: 550px;
+	height: 650px;
+	/* border: #000000 1px solid; */
+	margin-left: 100px;
+	float: left;}	
+	
+	span{text-decoration: line-through;
+	font-size: 14px;}
+	
+	#f3{float: left;
+	margin-left: 40px ;}
+	
+	#f4{width:100%;
+	height: 50px;
+	margin: auto;
+	/* border: #000000 1px solid; */
+	font-size: 40px;
+	float: left;
+	}
+	
+	#e4{width: 80%;
+	height: 100px;
+	border-bottom: #000000 5px double;
+	border-top: #000000 5px double;
+	margin-top: 610px;
+	margin-left:90px ;
+	font-size: 20px;
+	font-weight: 500;
+	}
+	
+	#f5{width: 85%;
+	height: 900px;
+	/* border: #000000 1px solid; */
+	margin: auto;}
+	
+	#f6{position: fixed;
+			   right:10px ;
+			   top: 70px;}
+			   
+	#f7{width: 100px;
+	height: 200px;
+	/* border: #000000 1px solid; */
+	position: fixed;
+	right:40px ;
+	top: 400px;
+	}
+			   
+	li:hover{color: #ff0000;
+	background-color: whitesmoke;}
+	
+	li{font-size: 19px;
+	font-weight: 600;
+	color: #AA0000;}
+	
+	button{background-color: papayawhip;}

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>注册会员</title>
+		<style type="text/css">
+			
+			#a{
+			margin: 80px 100px;
+			font-size: 1.5em;
+			height: 450px;
+			width: 800px;}
+		</style>
+	</head>
+	<body background="../img/beijin.jpg">
+		<a href="../index.html">返回首页</a>
+		<form>
+				<div id="a"><font size="4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;请注册成为我们的会员:☺</font><br >
+			1.请输入您的注册名称:<input type="text" size="30" ><br>
+			2.请输入您的注册密码:<input type="password" size="30"><br>
+			3.请再输入一次密码：<input type="password" size="30"><br>
+			4.请输入您的手机号码:<input type="number"><button><font size="2">点击获取短信验证码</font></button><br>
+			5.请输入短信验证码:<input type="text" size="30" ><br>
+			6.请选择您的性别：<input type="radio" name="sex">男&nbsp;<input type="radio" name="sex">女<br>
+			
+			7.请选择您来自的地区:<select name="" id="">
+		    <option value="" disabled selected hidden>--请在以下地市中选择--</option>
+		    <option value="">桂林市</option>
+		    <option value="">柳州市</option>
+		    <option value="">南宁市</option>
+			<option value="">北海市</option>
+		</select><br>
+		    8.请输入您的出生年月:<select name="" id="" size="1">
+		    <option value="" disabled selected hidden>2001</option>
+		    <option value="">2002</option>
+		    <option value="">2003</option>
+		    <option value="">2004</option>
+			<option value="">2005</option>
+			</select>年
+			<select name="" id="" size="1">
+			    <option value="" disabled selected hidden>1</option>
+			    <option value="">2-4</option>
+			    <option value="">4-7</option>
+			    <option value="">7-9</option>
+				<option value="">9-12</option>
+			</select>月
+			<select name="" id="" size="1">
+			    <option value="" disabled selected hidden>1</option>
+			    <option value="">2-9</option>
+			    <option value="">9-19</option>
+			    <option value="">19-29</option>
+				<option value="">29-31</option>
+			</select>日<br>
+			9.请上传您的一寸照<input type="file" size="5"><br>
+			10.请简要说明您的情况：<br><textarea name="you" cols="30" rows="5">请在此输入您的个人信息（100字以内......）</textarea><br>
+			<input type="submit" value="确认提交" onclick="alert('注册成功')">&nbsp;&nbsp;<input type="reset" value="重新填写" >
+			</div>
+			<a href="denglu.html">填写完成，去登录</a>
+			</form>
+			
+			
+			<script>
+				var btn = document.querySelector('button');
+				var time = 10;
+				btn.addEventListener('click',function(){
+					btn.disabled = true;
+					var timer = setInterval(function (){
+						if (time == 0){
+							time =10;//使可以多次点击
+							clearInterval(timer);
+							btn.disabled = false;
+							btn.innerHTML = '发送';
+						}else{
+							btn.innerHTML = '还剩下'+time+'秒';
+							time--
+						}
+					},1000);//读秒的速度
+				});
+			</script>
+	</body>
+</html>

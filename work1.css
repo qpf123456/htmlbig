@@ -1,0 +1,66 @@
+		button:link,button:visited{
+			color: fuchsia;
+			background-color: #808080;
+			text-decoration: none;/*none无文本修饰*/
+		}
+		
+		button:hover{
+			color:yellow;
+			background-color: pink;
+			border: aquamarine ;
+		}
+		
+		button:active{
+			color: green;
+			border: #008000;
+		}
+		
+		#a{width: 90%;
+		height: 50px;
+		background-color: rgba(255,0,0,0.1);
+		text-align: center;
+	      margin: auto;}
+		
+		.a1{width: 150px;
+		height: 50px;
+		background-color: transparent;
+		padding-top: 1px;
+		margin-left: 50px;
+		float: left;
+		font:楷书;
+		color: black;
+		text-align: center;}
+		
+		#a2{margin-left: 60px;
+		margin-top: 10px;
+		float: left;
+		color: #FF0000;
+		font-weight: 900;
+		font-family: "宋体";}
+		
+		.aa1{border: #000000 0px solid;
+		margin:10px auto;
+		padding-left:5px;
+		font-weight: 900;
+		font-size: larger;}
+		.b{width: 85%;
+		height: 100%;
+		border: #ff557f 10px double;
+		margin: auto;}
+		
+		#B{border: #c80ba6 0px solid;
+		width: 94px;
+		height:200px;
+		font-size: 1.5em;
+		font-weight: 500;
+		position: fixed;
+		right: 10px;
+		top: 100px;}
+		/* background-color: rgba(255,0,0,0.1);} */
+		
+		#B1{border: #c80ba6 0px solid;
+		width: 40px;
+		height:60px;
+		position: fixed;
+		right: 45px;
+		top: 600px;}

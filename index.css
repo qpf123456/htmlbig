@@ -1,0 +1,149 @@
+       
+		#a{width: 70%;
+		height: 50px;
+		background-color: rgba(255,0,0,0.1);
+		text-align: center;
+	      margin: auto;
+		  margin-top: 0px;
+		  }
+		
+		.a1{width: 150px;
+		height: 50px;
+		background-color: transparent;
+		padding-top: 1px;
+		margin-left: 10px;
+		float: left;
+		font:楷书;
+		color: black;
+		text-align: center;}
+		
+		#a2{margin-left: 60px;
+		margin-top: 10px;
+		float: left;
+		color: #FF0000;
+		font-weight: 900;
+		font-family: "宋体";}
+		
+		#a3{height: 500px;
+		width: 1206px;
+		margin-left: 200px;
+		margin: auto;
+		border: white 1px solid;}
+		
+		.aa1{border: #000000 0px solid;
+		margin:10px auto;
+		padding-left:5px;
+		font-weight: 900;
+		font-size: larger;
+		}
+			
+		#a4{height: 500px;
+		width: 400px;
+		background-color: white;
+		float: left;
+		border: #000000 0px solid;
+	   }
+		
+		#a5{height: 480px;
+		width: 400px;
+		background-color: white;
+		border-left: #FF0000 1px solid;
+		border-right:  #FF0000 1px solid;
+		float: left;}
+		
+		#a6{height: 480px;
+		width: 400px;
+		background-color: white;
+		border-right: #FF0000 1px solid;
+		float: left;}
+		
+		.aa2{color: black;
+		font-weight: 200;
+		text-align: center;
+		font-size: 7;
+		background-color: rgba(255,0,0,0.6);
+		margin: auto;}
+	
+	     #a7{width: 80%;
+		height: 80px;
+		background-color:rgba(255,0,0,0.1) ;
+		margin: 50px auto;}
+		
+		#aa3{color: black;
+		font-weight: 900;
+		text-align: center;
+		padding-top:26px;}
+		
+		button:link,button:visited{
+			color: fuchsia;
+			background-color: #808080;
+			text-decoration: none;/*none无文本修饰*/
+		}
+		
+		button:hover{
+			color:yellow;
+			background-color: pink;
+			border: aquamarine ;
+		}
+		
+		button:active{
+			color: green;
+			border: #008000;
+		}
+		#a8{position: fixed;
+			   right:20px ;
+			   top: 20px;}
+			   
+	      /*以下是轮播CSS代码*/		   
+			  #max{
+			  			     width: 1300px;
+			  			     height: 350px;
+			  			     align-items: center;
+			  			     margin-left: 0px;
+							 /* border: #000000 1px solid; */
+							 margin: auto;
+			  			   }
+			  			   .re{
+			  			     position: relative;
+			  			     height: 100px;
+			  			   }
+			  			   .re ul{
+			  			     list-style-type:none ;
+			  			   }
+			  			   .re ul>li{
+			  			     width: 900px;
+			  			     height: 100px;
+			  			     position: absolute;
+			  			   
+			  			     transition: 1s;/*过渡元素*/
+			  			     opacity: 0;/*设置元素的透明属性 0：完全透明，1：不完全透明，0.5：半透明*/
+			  			   }
+			  			   .re ul>li img{
+			  			     width: 1200px;
+			  			     height: 300px;
+			  			     border-radius: 1%;/*画半圆*/
+			  			     border: 10px double yellow;
+			  			   }
+			  			   #max ol {
+			  			     position: relative;/*相对定位*/
+			  			     display: grid;/*网格布局*/
+			  			     grid-template-columns: repeat(5,75px);/*使用空格分隔的值列表，用来定义网格的列和行*/
+			  			     grid-template-rows: auto;
+			  			     grid-gap: 1em;gap: 1em;/*定义网格布局中行与列之间间隙的尺寸*/
+			  			     float: right;
+			  			     margin-top: 290px;
+			  			   		 margin-right: 430px;
+			  			     list-style: none;/*设置列表样式的类型 。none表示无样式*/
+			  			     top:0;left:0;
+			  			   }
+			  			   #max ol li {
+			  			     width: 25px;
+			  			     height: 10px;
+			  			     font-size: 10px;
+			  			     line-height: 20px;
+			  			     float: left;
+			  			     text-align: center;
+			  			     border-radius: 1em;
+			  			     border: 3px solid rosybrown;
+			  			   }
+						   

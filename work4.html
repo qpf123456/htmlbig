@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>多彩超市页</title>
+		<link type="text/css" rel="stylesheet" href="../css/work4.css">
+		<script src="../js/jquery-3.3.1.min.js"></script>
+		<script src="../js/work4.js"></script>
+	</head>
+	<body background="../img/wanggou.jpg">
+		<div id="a">
+			
+		<div class="a1"><a href="../index.html">
+			<div class="aa1"><button><font size="4">多彩的首页</font></button></div>
+			</a></div>
+			
+			<div class="a1"><a href="work1.html">
+			<div class="aa1"><button><font size="4">多彩的节日</font></button></div>
+			</a></div>
+			
+			<div class="a1"><a href="work2.html">
+			<div class="aa1"><button><font size="4">多彩的习俗</font></button></div>
+			</a></div>
+			
+			<div class="a1"><a href="work3.html">
+			<div class="aa1"><button><font size="4">文章分享</font></button></div>
+			</a></div>
+			
+			<div class="a1"><a href="work4.html">
+			<div class="aa1"><button><font size="4">多彩商品购买</font></button></div>
+			</a></div>
+			
+			<div id="a2"><font size="6">多彩节日网</font></a></div>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="zhuce.html"><button><font color="orangered" size="3">用户注册</font></button></a><br />
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="denglu.html"><button><font color="orangered" size="3">用户登录</font></button></a>
+		</div><br />
+		<div id="e1">
+			欢迎光临多彩节日超市♥
+		</div>
+		<br />
+		<div id="e2">
+			<font size="6" color="#AA0000"><center>节日特卖♨</center></font>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;一、爸气十足，父爱如杉--<a href="Son/son4.html">来给您的父亲选一件衣服吧！☺</a><br /><br />
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;二、玫瑰之约，就在情人节--<a href="Son/son6.html">听说爱情的开端是一束鲜花。✿</a><br /><br />
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;三、粽情端午 ，多彩献礼--<a href="Son/son2.html">还有什么是比端午的粽子还好吃的吗？♚</a><br /><br />
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;四、迎春传心意，惊喜数不尽--<a href="Son/son5.html">你喜欢的样子我都有！✌</a><br /><br />
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;五、月是故乡明，多彩月饼表浓情--<a href="Son/son3.html">我家月饼超级好吃！☀</a><br /><br />
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;六、谁言寸草心，报得三春晖--<a href="Son/son1.html">五月康乃馨，爱心献母亲。❉</a>
+		</div>
+		
+		
+		<div class="wrapper">
+			<ul id="left">
+				<li><a href="#"><font color="white">父亲节</font></a></li>
+				<li><a href="#"><font color="white">情人节</font></a></li>
+				<li><a href="#"><font color="white">端午节</font></a></li>
+				<li><a href="#"><font color="white">母亲节</font></a></li>
+				<li><a href="#"><font color="white">春节专区</font></a></li>
+				<li><a href="#"><font color="white">中秋节</font></a></li>
+			</ul>
+			<div id="content"><br />
+				<div><a href="Son/son4.html"><img src="../img/fuli.jpg" width="900" height="600" title="父亲节商品正在热卖"></a></div>
+				<div><a href="Son/son6.html"><img src="../img/qingli.jpg" width="900" height="600" title="情人节商品正在热卖"></a></div>
+				<div><a href="Son/son2.html"><img src="../img/duanli.jpg" width="900" height="600" title="端午节商品正在热卖"></a></div>
+				<div><a href="Son/son1.html"><img src="../img/muli.jpg" width="900" height="600" title="母亲节商品正在热卖"></a></div>
+				<div><a href="Son/son5.html"><img src="../img/chunli.jpg" width="900" height="600" title="春节商品正在热卖"></a></div>
+				<div><a href="Son/son3.html"><img src="../img/zhongli.jpg" width="900" height="600" title="中秋节商品正在热卖"></a></div>
+			</div>
+		</div>
+		<hr />
+<script>
+		// 鼠标指针经过左侧的li
+			var flag = 0; // 
+			var index = 0;
+			$("#left li").mouseover(function() {
+				flag = 1;
+				index = $(this).index(); // 得到当前li的索引
+				console.log(index);
+				// 让右侧盒子相应索引的图片显示出来
+				$("#content div").eq(index).show();
+				// 将其他图片隐藏起来
+				$("#content div").eq(index).siblings().hide();
+		
+			});
+		
+			$("#left li").mouseout(function() {
+				flag = 0;
+			});
+		
+			var timer = setInterval(function() {
+				if (flag == 0) {
+		
+					index++;
+					if (index > $("#left li").length) {
+						index = 0;
+					}
+					console.log(index);
+					$("#content div").eq(index).show();
+					$("#content div").eq(index).siblings().hide();
+		
+				}
+		
+			}, 3000)
+</script>
+		<br><br>
+		<div id="e4">
+			合作伙伴：
+			<span>阿里巴巴集团</span>|<span>淘宝网</span>|<span>天猫</span>|<span>聚划算</span>|<span>全球速卖通</span>|<span>阿里巴巴国际交易市场</span>|<span>1688</span>|<span>阿里妈妈</span>|<span>飞猪</span>|<span>淘小铺</span>|<span>阿里云计算</span>|<span>AliOS</span>|<span>阿里通信</span>|<span>一淘</span>|万网</span>|<span>高德</span>|<span>UC</span>|<span>友盟</span>|<span>阿里安全</span>|<span>大麦网</span>|<span>钉钉</span>|<span>支付宝</span>|<span>优酷</span>|<span>土豆</span>|<span>阿里健康</span>|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;© 2021-现在 DuoCai.com 版权所有<br>
+			<center>多彩网版权所有2000-2021京ICP备08001421号&nbsp;&nbsp;&nbsp;京公网备案110108007702</center>
+		</div>
+	</body>
+</html>
